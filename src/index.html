@@ -27,12 +27,15 @@
       .wrapper-search {
         display: flex;
         justify-content: center;
+        flex-direction: column;
       }
       .btn-submit {
         padding: 10px;
       }
       body {
         background-color: #9b9880;
+        justify-content: center;
+        display: flex;
       }
       .load-more {
         background: #f9f0da;
@@ -51,7 +54,8 @@
       }
       .gallery {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
       }
     </style>
     <div class="wrapper-search">
@@ -68,9 +72,9 @@
       <div class="gallery">
         <!-- Картки зображень -->
       </div>
-    </div>
-    <div class="vrapper-btn">
-      <button type="button" class="load-more">Load more</button>
+      <div class="vrapper-btn">
+        <button type="button" class="load-more">Load more</button>
+      </div>
     </div>
 
     <script src="./index.js" type="module"></script>

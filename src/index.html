@@ -7,35 +7,72 @@
     <title>Document</title>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-    <div class="gallery">
-      <!-- Картки зображень -->
-    </div>
-    <div class="photo-card">
-      <!-- <img src="" alt="" loading="lazy" /> -->
-      <div class="info">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
+    <style>
+      .input {
+        width: 250px;
+        height: 42px;
+        padding-left: 15px;
+        border-radius: 42px;
+        border: 2px solid #324b4e;
+        background: #f9f0da;
+        outline: none;
+        position: relative;
+        transition: 0.3s linear;
+      }
+      .btn-submit {
+        background: #f9f0da;
+        border-radius: 40%;
+        margin-left: 40px;
+      }
+      .wrapper-search {
+        display: flex;
+        justify-content: center;
+      }
+      .btn-submit {
+        padding: 10px;
+      }
+      body {
+        background-color: #9b9880;
+      }
+      .load-more {
+        background: #f9f0da;
+        border-radius: 40%;
+        margin-left: 40px;
+        display: none;
+      }
+      .vrapper-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      img {
+        width: 400px;
+        height: 300px;
+      }
+      .gallery {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <div class="wrapper-search">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="input"
+        />
+        <button type="submit" class="btn-submit">Search</button>
+      </form>
+      <div class="gallery">
+        <!-- Картки зображень -->
       </div>
     </div>
-    <button type="button" class="load-more">Load more</button>
+    <div class="vrapper-btn">
+      <button type="button" class="load-more">Load more</button>
+    </div>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
